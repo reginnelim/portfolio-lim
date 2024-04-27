@@ -8,7 +8,7 @@
         $sql="UPDATE `about` SET `intro`='$intro'";
         $result = mysqli_query($conn,$sql);
         if($result){
-            echo"Updated successfully";
+            header(Location: index.php);
         }
     
     }
